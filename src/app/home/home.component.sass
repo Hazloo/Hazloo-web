@@ -1,0 +1,287 @@
+@import src\styles.sass
+
+.info-text-primary
+    width: 50%
+    margin: 0 auto
+    padding-top: 91px
+    padding-bottom: 20px
+
+    .paragraph-info-text-primary
+        text-align: center
+        font-size: 40px
+        font-weight: 600
+
+.info-menu-services
+    display: flex
+    width: 100%
+    flex-direction: row
+    justify-content: center
+
+    a
+        display: flex
+
+    .svg-icon
+        width: 9%
+        margin-left: 25px
+
+.info-text-secundary
+    width: 40%
+    text-align: center
+    margin: 0 auto
+    padding-bottom: 40px
+
+    .paragraph-info-text-secundary
+        font-size: 20px
+        font-weight: 500
+
+//Sección de información de páginas
+.section-info-page,
+.section-info-page-white,
+.section-info-page-green,
+.section-info-page-purple
+    width: 100%
+    border-bottom: 40px solid $color-yellow
+    margin-bottom: 6%
+
+    .section-header,
+    .section-header-white,
+    .section-header-green,
+    .section-header-purple
+        margin: 0 auto
+        height: 120px
+        background: black
+
+    .logo-header-page
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+
+    .icon-info-page-first
+        margin-top: 10px
+        width: 7%
+
+    .icon-info-page-two
+        margin-top: -7px
+        width: 8%
+
+    .video-container
+        margin: 0 auto
+        width: 100%
+        position: relative
+
+        img
+            height: 750px
+            width: 100%
+
+    .info-video-container
+        display: flex
+        width: 75%
+        flex-direction: column
+        justify-content: flex-end
+        position: absolute
+        top: 68%
+        left: 20%
+
+    .paragraph-info-video-container
+        width: 60%
+        font-size: 30px
+        font-weight: 600
+        color: white
+
+    .paragraph-bg
+        background-color: $color-yellow
+
+    .button-info-container
+        width: 40%
+
+        .btn
+            border-radius: 10px
+            width: 30%
+            margin-right: 2%
+            padding: 10px
+
+        .btn.btn-call-to-action
+            background-color: $color-yellow
+            border-color: $color-yellow
+            color: white
+            font-weight: 500
+            margin-right: 25px
+
+        .btn.btn-more-info
+            background-color: $color-gray
+            border-color: $color-gray
+            color: black
+            font-weight: 500
+
+.first-separation-top
+    height: 5px
+    background-color: $color-blue
+    margin-bottom: 3%
+
+//Hazlo eventos
+
+.section-info-page-white
+    border-bottom: 40px solid $color-blue !important 
+
+.section-header-white
+    background-color: white !important
+
+.icon-info-page-first.event
+    width: 4% !important
+
+.initial-info,
+.initial-info-consultancy
+    display: flex
+    width: 100%
+    margin-top: 4%
+    margin-bottom: 6%
+    padding-left: 20%
+
+.information
+    width: 50%
+
+.information-content .title
+    font-weight: 600
+
+.information-content .content
+    width: 65%
+    margin-top: 5%
+    margin-bottom: 5%
+
+.button-info-container.two-options,
+.button-info-container.three-options
+    width: 80% !important
+
+.btn-call-to-action.event
+    background-color: $color-blue !important
+    border-color: $color-blue !important
+
+.btn-call-to-action.quick
+    background-color: $color-green !important
+    border-color: $color-green !important
+
+.btn-call-to-action.consultancy
+    background-color: $color-purple !important
+    border-color: $color-purple !important
+
+.btn-more-info.quick
+    background-color: white !important
+    border-color: $color-green !important
+
+.btn-more-info.consultancy
+    background-color: white !important
+    border-color: $color-purple !important
+
+.initial-images
+    position: relative
+    width: 50%
+
+    .icon-top-bar
+        width: 80%
+
+    .img-bottom
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+
+    .img-top
+        position: absolute
+        top: -20%
+        left: 30%
+        z-index: 1
+
+    .img-left
+        width: 7%
+        position: absolute
+        top: -25%
+        left: 82%
+        z-index: -1
+
+.margin-space-slide
+    margin-top: 20%
+
+//Hazloo rápido
+
+.section-header-green
+    background-color: $color-green !important
+
+.section-info-page-green
+    border-bottom: 40px solid $color-green !important
+
+    .icon-info-page-first.quick
+        margin-top: 30px !important
+        width: 4% !important
+
+    .icon-info-page-two.quick
+        margin-top: 35px !important
+        width: 10% !important
+
+    .paragraph-bg
+        background-color: red 
+        color: white
+
+    .img-top-bottom
+        position: absolute
+        top: 53%
+        left: 30%
+        z-index: 1
+
+    .border-left
+        position: absolute
+        height: 90%
+        top: 55%
+        left: 28%
+        z-index: 1
+        border-left: 20px solid $color-green
+
+// Hazloo consultoría
+
+.section-info-page-purple
+    border-bottom: unset
+    margin-bottom: 3% !important
+
+.section-header-purple
+    background-color: $color-purple !important
+
+.icon-info-page-first.consultancy
+    width: 6% !important
+
+.initial-info.consultancy
+    margin-bottom: 0% !important
+
+.information.consultancy
+    position: absolute
+    top: 25%
+
+    .title
+        color: black
+        font-weight: 600
+
+    .content
+        color: black
+
+    .paragraph-bg 
+        background-color: $color-purple
+        color: white
+    
+    .button-info-container.three-options
+        width: 64% !important
+    
+//Mensaje final
+
+.final-message
+    display: flex 
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    margin-bottom: 15%
+
+    .content-message
+        font-size: 24px
+        margin-bottom: 30px
+    
+    .image-message
+        width: 15%
+        

@@ -1,0 +1,272 @@
+@import src\styles.sass
+@import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss'
+
+.section-info-page-consultancy
+    width: 100%
+
+    .section-header
+        margin: 0 auto
+        height: 120px
+        background: $color-purple-two
+
+    .logo-header-page
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+
+    .icon-info-page-first
+        margin-top: 10px
+        width: 35%
+
+    .icon-info-page-two
+        margin-top: 12%
+        width: 70%
+
+    .section-image
+        margin-bottom: 5%
+
+    .video-container
+        margin: 0 auto
+        width: 100%
+        position: relative
+
+        .img-consultancy
+            height: 750px
+            width: 100%
+
+    .info-image-container
+        display: flex
+        width: 32%
+        flex-direction: column
+        justify-content: flex-end
+        position: absolute
+        top: 22%
+        left: 18%
+
+    .paragraph-info-container
+        width: 70%
+        font-size: 40px
+        font-weight: 600
+        color: $color-purple-two
+
+    .paragraph-bg
+        color: #FFFF
+        background-color: $color-purple
+
+    .button-info-container
+        width: 40%
+
+        .btn
+            border-radius: 10px
+            width: 78%
+            margin-top: 20px
+            margin-right: 2%
+            padding: 10px
+
+        .btn.btn-call-to-action
+            background-color: $color-purple-two
+            border-color: $color-purple-two
+            color: #FFFF
+            font-weight: 500
+            margin-right: 25px
+    
+    .services-consultancy
+        display: flex
+        flex-direction: column
+        margin-bottom: 5%
+
+        .logo-consultancy
+            margin: 0 auto
+
+            .icon-consultancy
+                width: 100%
+                height: 65px
+                
+
+        .content-services-consultancy
+            text-align: center
+            margin-bottom: 5%
+
+            .title
+                margin-top: 15px
+                margin-bottom: 30px
+                font-weight: bold
+
+            .content
+                margin: 0 auto
+                font-size: 20px
+                width: 40%
+        
+    
+    .services-information
+        width: 90%
+        margin: 0 auto
+
+        .articles-information
+            display: flex 
+            margin: 0 auto
+            flex-direction: row 
+            justify-content: space-around
+            width: 100%
+            margin-bottom: 9%
+
+            .articles-content
+                width: 30%
+                flex-direction: column
+                flex-wrap: wrap
+            
+            .article-title > h3
+                font-size: 30px
+                font-weight: 600
+                margin-bottom: 3%
+            
+            .article-content-paragraph > p 
+                flex-wrap: wrap
+                font-size: 18px
+
+            .btn-call-to-action-two
+                border-radius: 10px
+                width: 35.7%
+                margin-top: 20px
+                margin-right: 2%
+                padding: 10px
+                background-color: $color-green
+                border-color: $color-green
+                color: #FFFF
+                font-weight: 500
+                margin-right: 25px
+
+    .content-consultants
+        display: flex 
+        flex-direction: column
+        margin: 0 auto 
+        margin-bottom: 5%
+        width: 100%
+        height: 600px
+        background-color: $color-purple-two
+
+        .title-consultants
+            margin: 0 auto 
+            margin-top: 20px
+            margin-bottom: 20px
+            font-size: 40px
+            color: white
+            font-weight: bold
+
+        .slide-consultants
+            height: 100%
+
+            input
+              &[type="radio"]
+                display: none
+
+            .card 
+                position: absolute
+                width: 60%
+                height: 100%
+                left: 0
+                right: 0
+                margin: auto
+                transition: transform .4s ease
+                cursor: pointer
+            
+            .container 
+                width: 100%
+                height: 100%
+                transform-style: preserve-3d
+                display: flex
+                justify-content: center
+                flex-direction: column
+                align-items: center
+            
+            .cards 
+                position: relative
+                width: 80%
+                height: 70%
+                margin-bottom: 20px
+                
+
+            img, video 
+                width: 100%
+                height: 100%
+                border-radius: 10px
+                object-fit: cover
+                border: unset
+            
+            #item-1:checked ~ .cards #consultant-3, #item-2:checked ~ .cards #consultant-1, #item-3:checked ~ .cards #consultant-2 
+                transform: translatex(-40%) scale(.8)
+                opacity: .4
+                z-index: 0
+                border: none
+                
+
+            #item-1:checked ~ .cards #consultant-2, #item-2:checked ~ .cards #consultant-3, #item-3:checked ~ .cards #consultant-1 
+                transform: translatex(40%) scale(.8)
+                opacity: .4
+                z-index: 0
+                border: none
+                border: none
+
+            #item-1:checked ~ .cards #consultant-1, #item-2:checked ~ .cards #consultant-2, #item-3:checked ~ .cards #consultant-3 
+                transform: translatex(0) scale(1)
+                opacity: 1
+                z-index: 1
+                border: none
+                
+            //     img 
+            //         box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47)
+                
+            .player 
+                position: relative
+                top: -133px
+                left: -300px
+                width: 28%
+                z-index: 2
+                border-radius: 8px
+                padding: 16px 0px
+
+            .upper-part 
+                position: relative
+                display: flex
+                align-items: center
+                margin-bottom: 12px
+                height: 55px
+                overflow: hidden
+
+            .consultant-info 
+                width: calc(100% - 32px)
+                display: block
+
+            .consultant-info .title 
+                font-size: 20px
+                color: #FFFF
+                font-weight: bold
+                line-height: 24px
+                margin-left: 54%
+                margin-bottom: 7px
+            
+            .sub-line 
+                display: flex
+                color: #FFFF
+                margin-left: 54%
+                justify-content: space-between
+                width: 100%
+         
+            .info-area 
+                width: 100%
+                position: absolute
+                top: 0
+                left: 30px
+                transition: transform .4s ease-in
+                
+
+            #item-2:checked ~ .player #test 
+                transform: translateY(0)
+            
+
+            #item-2:checked ~ .player #test  
+                transform: translateY(-55px)
+            
+
+            #item-3:checked ~ .player #test  
+                transform: translateY(-108px)
