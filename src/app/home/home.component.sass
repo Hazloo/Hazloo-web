@@ -1,221 +1,225 @@
 @import src\styles.sass
 
-.info-text-primary
-    width: 50%
-    margin: 0 auto
-    padding-top: 91px
-    padding-bottom: 20px
-
-    .paragraph-info-text-primary
-        text-align: center
-        font-size: 40px
-        font-weight: 600
-
-.info-menu-services
-    display: flex
+.section-info-main
     width: 100%
-    flex-direction: row
-    justify-content: center
 
-    a
+    .info-text-primary
+        width: 70%
+        margin: 0 auto
+        padding-top: 91px
+        padding-bottom: 20px
+
+        .paragraph-info-text-primary
+            text-align: center
+            font-size: 40px
+            font-weight: 600
+
+    
+    .info-menu-services-list 
         display: flex
+        list-style: none
+        flex-direction: row
+        justify-content: center
+        
+        .info-menu-services-item 
+            margin-right: -11%
+        
+        .svg-icon
+            width: 50%
 
-    .svg-icon
-        width: 9%
-        margin-left: 25px
-
-.info-text-secundary
-    width: 40%
-    text-align: center
-    margin: 0 auto
-    padding-bottom: 40px
+    .info-text-secundary
+        width: 55%
+        text-align: center
+        margin: 0 auto
+        padding-bottom: 40px
 
     .paragraph-info-text-secundary
         font-size: 20px
         font-weight: 500
 
-//Sección de información de páginas
-.section-info-page,
+.section-info-page-black,
 .section-info-page-white,
 .section-info-page-green,
 .section-info-page-purple
     width: 100%
-    border-bottom: 40px solid $color-yellow
     margin-bottom: 6%
-
-    .section-header,
-    .section-header-white,
-    .section-header-green,
-    .section-header-purple
-        margin: 0 auto
-        height: 120px
-        background: black
+    border-bottom: 40px solid $color-yellow
 
     .logo-header-page
         display: flex
         flex-direction: row
+        flex-wrap: nowrap
         justify-content: space-around
+        background-color: #000
+        height: 120px
 
-    .icon-info-page-first
-        margin-top: 10px
-        width: 7%
+        .icon-div
+            width: 10%
+        
+            .icon-info-page-first
+                margin-top: 10px
+                width: 100%
+                height: 100%
 
-    .icon-info-page-two
-        margin-top: -7px
-        width: 8%
+            .icon-info-page-two
+                width: 100%
+                height: 100%
 
-    .video-container
-        margin: 0 auto
-        width: 100%
-        position: relative
+    .section-container
+        display: flex 
+        flex-wrap: wrap
+        width: 100%   
+        margin-bottom: 3% 
 
-        img
-            height: 750px
+        .img-container
+            height: 500px
             width: 100%
+ 
+            .wallpaper
+                width: 100%
+        
+        .info-container
+            display: flex
+            flex-direction: column
+            width: 70%
+            margin-top: -8%
+            margin-left: 22%
+            
+            .paragraph-info-container
+                width: 75%
+                font-size: 30px
+                font-weight: 600
+                color: #FFFF
 
-    .info-video-container
-        display: flex
-        width: 75%
-        flex-direction: column
-        justify-content: flex-end
-        position: absolute
-        top: 68%
-        left: 20%
+            .paragraph-bg
+                background-color: $color-yellow
 
-    .paragraph-info-video-container
-        width: 60%
-        font-size: 30px
-        font-weight: 600
-        color: white
-
-    .paragraph-bg
-        background-color: $color-yellow
-
-    .button-info-container
-        width: 40%
-
-        .btn
-            border-radius: 10px
-            width: 30%
-            margin-right: 2%
-            padding: 10px
 
         .btn.btn-call-to-action
+            color: #FFFF
             background-color: $color-yellow
             border-color: $color-yellow
-            color: white
-            font-weight: 500
-            margin-right: 25px
 
         .btn.btn-more-info
             background-color: $color-gray
             border-color: $color-gray
-            color: black
-            font-weight: 500
-
-.first-separation-top
-    height: 5px
-    background-color: $color-blue
-    margin-bottom: 3%
-
-//Hazlo eventos
-
+            color: #000
+    
+    .slide-video
+        margin-top: 12.5%
+        
+//Hazloo eventos
 .section-info-page-white
-    border-bottom: 40px solid $color-blue !important 
+    border-bottom: 40px solid $color-blue
 
-.section-header-white
-    background-color: white !important
+    .logo-header-page
+        background-color: #FFFF
 
 .icon-info-page-first.event
-    width: 4% !important
+    width: 95% !important
+    height: 60% !important
 
-.initial-info,
-.initial-info-consultancy
+.icon-div.two
+    width: 14% !important
+
+.initial-info
     display: flex
+    justify-content: space-between
     width: 100%
     margin-top: 4%
-    margin-bottom: 6%
+    margin-bottom: 4%
     padding-left: 20%
 
 .information
     width: 50%
 
-.information-content .title
-    font-weight: 600
+    .information-content .title
+        font-weight: 600
 
-.information-content .content
-    width: 65%
-    margin-top: 5%
-    margin-bottom: 5%
+    .information-content .content
+        width: 65%
+        margin-top: 5%
+        margin-bottom: 5%
 
-.button-info-container.two-options,
-.button-info-container.three-options
-    width: 80% !important
+.button-info-container.two-options
+    width: 100%
+    margin: 0
 
-.btn-call-to-action.event
-    background-color: $color-blue !important
-    border-color: $color-blue !important
-
-.btn-call-to-action.quick
-    background-color: $color-green !important
-    border-color: $color-green !important
-
-.btn-call-to-action.consultancy
-    background-color: $color-purple !important
-    border-color: $color-purple !important
-
-.btn-more-info.quick
-    background-color: white !important
-    border-color: $color-green !important
-
-.btn-more-info.consultancy
-    background-color: white !important
-    border-color: $color-purple !important
+    .btn-call-to-action
+        color: #FFFF
+        background-color: $color-blue
+        border-color: $color-blue
+    
+    .btn-more-info
+        background-color: $color-gray
+        border-color: $color-gray
+        color: #000
 
 .initial-images
     position: relative
     width: 50%
 
-    .icon-top-bar
+    .picture,
+    .picture-two
+        position: absolute
         width: 80%
+        height: 200px 
 
-    .img-bottom
-        position: absolute
-        top: 0
-        left: 0
-        z-index: -1
+        .img-bottom
+            width: 80%
 
-    .img-top
-        position: absolute
-        top: -20%
-        left: 30%
-        z-index: 1
+        .icon-top-bar
+            width: 100%
+            margin-top: -7px
 
-    .img-left
-        width: 7%
-        position: absolute
-        top: -25%
-        left: 82%
-        z-index: -1
+        .img-bottom
+            width: 100% 
+            top: 0
+            left: 0
+            z-index: -1
 
-.margin-space-slide
-    margin-top: 20%
+        .img-top
+            position: absolute
+            width: 70%
+            top: -18%
+            left: 44%
+            z-index: 1
+
+        .img-left
+            width: 7%
+            position: absolute
+            top: -18%
+            left: 113%
+            z-index: -1
+
+.slide-event
+    margin-top: 9%
 
 //Hazloo rápido
-
-.section-header-green
-    background-color: $color-green !important
-
 .section-info-page-green
-    border-bottom: 40px solid $color-green !important
+    border-bottom: 40px solid $color-green
+    
+    .logo-header-page
+        background-color: $color-green
 
-    .icon-info-page-first.quick
-        margin-top: 30px !important
-        width: 4% !important
+        .icon-info-page-first.quick
+            margin-top: 32px !important
+            width: 74% !important
+            height: 46% !important
+        
+        .icon-div.three
+            width: 12% !important
 
-    .icon-info-page-two.quick
-        margin-top: 35px !important
-        width: 10% !important
+
+    .btn-call-to-action.quick
+        background-color: $color-green
+        border-color: $color-green
+        color: #FFFF
+    
+    .btn-more-info.quick
+        background-color: #FFFF
+        border-color: $color-green
+        color: #000
 
     .paragraph-bg
         background-color: red 
@@ -223,60 +227,46 @@
 
     .img-top-bottom
         position: absolute
-        top: 53%
-        left: 30%
+        width: 70%
+        top: 62%
+        left: 38%
         z-index: 1
 
-    .border-left
-        position: absolute
-        height: 90%
-        top: 55%
-        left: 28%
-        z-index: 1
-        border-left: 20px solid $color-green
+.slide-quick
+    margin-top: 7.5%
 
-// Hazloo consultoría
-
+// HAZLOO CONSULTORIA
 .section-info-page-purple
-    border-bottom: unset
-    margin-bottom: 3% !important
+    border-bottom: none
 
-.section-header-purple
-    background-color: $color-purple !important
-
-.icon-info-page-first.consultancy
-    width: 6% !important
-
-.initial-info.consultancy
-    margin-bottom: 0% !important
-
-.information.consultancy
-    position: absolute
-    top: 25%
-
-    .title
-        color: black
-        font-weight: 600
-
-    .content
-        color: black
-
-    .paragraph-bg 
+    .logo-header-page
         background-color: $color-purple
-        color: white
     
-    .button-info-container.three-options
-        width: 64% !important
-    
-//Mensaje final
+    .paragraph-bg.purple
+        color: #FFFF
+        background-color: $color-purple !important
 
+    .initial-info.consultancy
+        margin-top: -14% !important
+
+        .btn-call-to-action.consultancy
+            background-color: $color-purple
+            border-color: $color-purple
+            color: #FFFF
+        
+        .btn-more-info.consultancy
+            background-color: #FFFF
+            border-color: $color-purple
+            color: #000
+
+//Mensaje final
 .final-message
     display: flex 
     flex-direction: column
     justify-content: center
     align-items: center
     width: 100%
-    margin-bottom: 15%
+    margin-bottom: 10%
 
     .content-message
         font-size: 24px
@@ -284,4 +274,20 @@
     
     .image-message
         width: 15%
-        
+
+
+    
+@media screen and (max-width: 1330px)
+
+.section-info-page-purple
+    & .initial-info.consultancy
+        margin-top: -20% !important
+
+.slide-video
+    margin-top: 3.5% !important
+
+.slide-event
+    margin-top: 5.5% !important
+    
+.slide-quick
+    margin-top: 4.5% !important

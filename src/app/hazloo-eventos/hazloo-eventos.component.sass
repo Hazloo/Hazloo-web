@@ -25,13 +25,14 @@
     .icon-info-page-first.event
         width: 4% !important
 
+    
     .initial-info
         display: flex
         justify-content: space-around
         width: 100%
         height: 570px
         margin-top: 3%
-        margin-bottom: 6%
+        margin-bottom: 3%
         padding-top: 8%
         background-color: #F9F9FA
 
@@ -50,6 +51,7 @@
             
         .button-info-container
             width: 40%
+            margin-left: 0
 
             .btn
                 border-radius: 10px
@@ -93,73 +95,50 @@
                 font-size: 20px
                 width: 40%
 
-    .articles-information
-        display: flex 
-        margin: 0 auto
-        flex-direction: row 
-        justify-content: space-around
-        width: 68%
-        margin-bottom: 9%
-        
-        .articles-content.two
-            margin-right: -3%
+    .container.information-main
+        margin-right: 8%
 
-        .article-title > h3
-            font-size: 30px
-            font-weight: 600
+        .row
             margin-bottom: 3%
-        
-        .article-content-paragraph > p 
-            font-size: 18px
-            width: 65%
 
-        .btn-call-to-action-two
-            border-radius: 10px
-            width: 35.7%
-            margin-top: 20px
-            margin-right: 2%
-            padding: 10px
-            background-color: $color-blue
-            border-color: $color-blue
-            color: #FFFF
-            font-weight: 500
-            margin-right: 25px
+            .col
 
-        .article-image
-            width: 100%
-            z-index: 1
+                .article-content
+                    & > h3 
+                        font-size: 30px
+                        font-weight: 600
+                        margin-bottom: 3%
+                    
+                    & > p 
+                        font-size: 18px
+                        width: 65%
 
-        .article-img-bottom
-            position: absolute
-            z-index: -1
-            width: 76px
-            height: 234px
-        
-        .article-image
-            margin-right: 17%
-        
-        .article-img-bottom.one
-            left: 78%
-            top: 135%
+                .article-images
+                    width: 70%
+                    height: 100%
 
-        .article-img-bottom.two
-            left: 353px
-            top: 180.3%
+                    .article-image
+                        width: 100%
 
-        .article-img-bottom.three
-            left: 78%
-            top: 225.8%
-        
-        .article-img-bottom.four
-            left: 353px
-            top: 271%
-    
+                .btn-call-to-action-two
+                    border-radius: 10px
+                    width: 30%
+                    margin-top: 20px
+                    margin-right: 2%
+                    padding: 10px
+                    background-color: $color-blue
+                    border-color: $color-blue
+                    color: #FFFF
+                    font-weight: 500
+                    margin-right: 25px
+           
 
     .final-message
         display: flex
         flex-direction: row 
         margin: 0 auto
-        margin-bottom: 4%
+        margin-top: 8%
+        margin-bottom: 5%
         padding-top: 2%
         padding-bottom: 2%
         padding-left: 15%
@@ -176,41 +155,32 @@
             color: #FFF
             padding-top: 1%
     
-    .informative-section
-        display: flex
-        flex-direction: column 
-        width: 70%
-        margin: 0 auto
-        margin-bottom: 2%
+    .container.informative
+        margin-bottom: 6%
 
-        .general-title > h3
-            text-align: center
-            font-weight: 500
-            margin-bottom: 5%
+        .row.informative
 
-        .options
-            display: flex
-            text-align: center
-            flex-direction: row
-            margin-left: 2%
-            
-            .option-one,
-            .option-two,
-            .option-three
-                margin-right: 3%
-
-            .icon-div
-                width: 100%
-                margin-bottom: 20px
-
-                .icon
-                    border-radius: 50%
-            
-            .title
+            & > .col.informative
                 margin: 0 auto
-                margin-bottom: 20px
-                width: 60%
-                background-color: $color-blue
+                text-align: center
 
-            .title > h4 
-                color: #FFFF
+                & > .title
+                    width: 60%
+                    margin: 0 auto
+                    text-align: center
+                    font-weight: 500
+                    margin-top: 10px
+                    margin-bottom: 5% 
+                    background-color: $color-blue
+                    color: #FFFF
+
+                & > .icon-div
+                    margin: 0 auto 
+
+                    & > .icon
+                        border-radius: 50%
+
+@media screen and (max-width: 1400px)
+    .section-info-page-event  .container.information-main
+        margin-right: 0%
+    
